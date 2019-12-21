@@ -1,0 +1,18 @@
+<h2>News page</h2>
+
+{{#if todos.length}}
+<ul>
+    {{#each todos}}
+        <li class="todo">
+            
+            <span>{{title}}</span>
+
+            <input type="hidden" value="{{_id}}" name="id">
+
+
+        </li>
+    {{/each}}
+</ul>
+{{else}}
+<p>No news!</p>
+{{/if}}
